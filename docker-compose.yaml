@@ -1,0 +1,15 @@
+version: "3"
+services:
+  db2xmeta:
+    image: 921992833788.dkr.ecr.us-west-2.amazonaws.com/engine:8.23.2.1
+    ports:
+      - "10000-10200:10000-10200"
+      - "11000-11200:11000-11200"
+      - "13400-13401:13400-13401"
+      - "30000-30010:30000-30010"
+      - "31531:31531"
+      - "31538:31538"
+    privileged: true
+    hostname: is-en-conductor-0.en-cond
+    volumes:
+      - /data0:/data0
