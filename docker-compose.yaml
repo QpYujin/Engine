@@ -1,6 +1,6 @@
 version: "3"
 services:
-  db2xmeta:
+  conductor:
     image: 921992833788.dkr.ecr.us-west-2.amazonaws.com/engine:8.23.2.1
     ports:
       - "10000-10200:10000-10200"
